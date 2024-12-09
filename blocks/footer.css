@@ -7,9 +7,9 @@
 }
 
 .footer__author {
+  margin-top: 0;
   margin-bottom: 0;
-  width: 104px;
-  height: 16px;
+  max-width: 104px;
   flood-color: #212121;
   opacity: 70%;
   font-weight: 400;
