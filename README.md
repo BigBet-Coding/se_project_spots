@@ -2,7 +2,7 @@
 
 ### Overview
 
-## Spots - mock social media imge sharing website
+## Spots - mock social media image sharing website
 
 **Intro**
 
@@ -19,6 +19,8 @@ Project 3 is called "Spots". With this project, it resembles a mock version of a
 **Figma**
 
 - [Link to the project](https://bigbet-coding.github.io/se_project_spots/)
+
+- [Link to the video](https://drive.google.com/file/d/1uXkWvN6Mcjms5XHhKb_27afFSiS_mibY/view?usp=sharing)
 
 **Images**
 
