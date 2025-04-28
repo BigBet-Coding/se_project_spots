@@ -25,4 +25,28 @@ const initialCards = [
   },
 ];
 
-console.log(initialCards);
+const editProfileBtn = document.querySelector(".profile__edit-button");
+const editProfileModal = document.querySelector("#edit-profile-modal");
+const editProfileClsBtn = editProfileModal.querySelector(
+  ".modal__close-button"
+);
+
+const newPostBtn = document.querySelector(".profile__add-button");
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostClsBtn = newPostModal.querySelector(".modal__close-button");
+
+editProfileBtn.addEventListener("click", function () {
+  editProfileModal.classList.add("modal_opened");
+});
+
+editProfileClsBtn.addEventListener("click", function () {
+  editProfileModal.classList.remove("modal_opened");
+});
+
+newPostBtn.addEventListener("click", function () {
+  newPostModal.classList.add("modal_opened");
+});
+
+newPostClsBtn.addEventListener("click", function () {
+  newPostModal.classList.remove("modal_opened");
+});
