@@ -30,12 +30,22 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileClsBtn = editProfileModal.querySelector(
   ".modal__close-button"
 );
+const editProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileNameInput = editProfileModal.querySelector("#name");
+const editProfileDescriptionInput =
+  editProfileModal.querySelector("#description");
 
 const newPostBtn = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostClsBtn = newPostModal.querySelector(".modal__close-button");
+const newPostCardForm = newPostModal.querySelector(".modal__form");
+
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileBtn.addEventListener("click", function () {
+  editProfileNameInput.value = profileNameEl.textContent;
+  editProfileDescriptionInput.value = profileDescriptionEl.textContent;
   editProfileModal.classList.add("modal_opened");
 });
 
@@ -50,3 +60,19 @@ newPostBtn.addEventListener("click", function () {
 newPostClsBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_opened");
 });
+
+function handleEditProfileSubmit(evt) {
+  evt.preventDefault();
+  profileNameEl.textContent = editProfileNameInput.value;
+  profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+  editProfileModal.classList.remove("modal_opened");
+}
+
+function handleNewPostSubmit(evt) {
+  evt.preventDefault();
+  console.log("value");
+}
+
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+
+newPostCardForm.addEventListener("submit", handleNewPostSubmit);
