@@ -40,6 +40,10 @@
   right: 50px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+}
+
+.modal__close-button:hover {
 }
 
 .modal__title {
@@ -64,12 +68,16 @@
 }
 
 .modal__input {
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  font-size: 20px;
+  line-height: 1;
   padding: 16px 12px;
   border-radius: 8px;
 }
 
 .modal__submit-button {
   background-color: #212121;
+  border: none;
   border-radius: 8px;
   width: 156px;
   padding: 18px 0;
@@ -78,11 +86,19 @@
   font-size: 16px;
   line-height: 1;
   color: #fcf5e5;
+  cursor: pointer;
+}
+
+.modal__submit-button:hover {
 }
 
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
+  }
+
+  .modal__input {
+    font-size: 16px;
   }
 
   .modal__container {
