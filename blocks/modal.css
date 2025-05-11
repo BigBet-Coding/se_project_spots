@@ -34,8 +34,9 @@
 .modal__close-button {
   position: absolute;
   border: none;
-  background-image: url(../images/Close-button.svg);
+  background-image: url(../images/Close-button-black.svg);
   background-color: transparent;
+  opacity: 0.4;
   top: 32px;
   right: 50px;
   width: 40px;
@@ -44,6 +45,7 @@
 }
 
 .modal__close-button:hover {
+  opacity: 1;
 }
 
 .modal__title {
@@ -90,6 +92,7 @@
 }
 
 .modal__submit-button:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 627px) {

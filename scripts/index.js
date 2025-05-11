@@ -40,6 +40,8 @@ const newPostBtn = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostClsBtn = newPostModal.querySelector(".modal__close-button");
 const newPostCardForm = newPostModal.querySelector(".modal__form");
+const newPostImageLink = newPostModal.querySelector("#imageLink");
+const newPostCaption = newPostModal.querySelector("#caption");
 
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
@@ -71,6 +73,8 @@ function handleEditProfileSubmit(evt) {
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
+  console.log("Image URL:", newPostImageLink.value);
+  console.log("Caption:", newPostCaption.value);
   newPostModal.classList.remove("modal_opened");
 }
 
