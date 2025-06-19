@@ -73,36 +73,44 @@ const newPostCaption = newPostModal.querySelector("#caption");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+}
+
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  editProfileModal.classList.add("modal_opened");
+  openModal(editProfileModal);
 });
 
 editProfileClsBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_opened");
+  closeModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_opened");
+  openModal(newPostModal);
 });
 
 newPostClsBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_opened");
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_opened");
+  closeModal(editProfileModal);
 }
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
   console.log("Image URL:", newPostImageLink.value);
   console.log("Caption:", newPostCaption.value);
-  newPostModal.classList.remove("modal_opened");
+  closeModal(newPostModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
