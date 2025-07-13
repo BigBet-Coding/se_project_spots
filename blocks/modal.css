@@ -49,7 +49,7 @@
 }
 
 .modal__close-button_type_preview {
-  /* TODO - set up correct back ground image*/
+  background-image: url(../images/PreviewClsBtn.svg);
   top: 0;
   right: -52.5px;
 }
@@ -58,7 +58,11 @@
   opacity: 1;
 }
 
-/* TODO set up preview closer button's style*/
+.modal__close-button_type_preview:hover {
+  cursor: pointer;
+  background-image: url(../images/PreviewClsHvr.svg);
+  opacity: 0.3;
+}
 
 .modal__title {
   margin: 0 0 32px;
@@ -122,6 +126,15 @@
 
 .modal__caption {
   color: white;
+  background-color: #212121;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  margin: 8px 0;
+  width: max-content;
+  border-radius: 8px;
+  padding: 4px 8px;
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
