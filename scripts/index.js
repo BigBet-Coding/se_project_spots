@@ -165,6 +165,9 @@ function handleNewPostSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
+  newPostCaption.value = "";
+  newPostImageLink.value = "";
+
   closeModal(newPostModal);
 }
 

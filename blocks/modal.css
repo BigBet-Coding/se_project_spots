@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .modal_type_preview {
@@ -138,10 +138,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .modal {
-    padding: 0 10px;
-  }
-
   .modal__input {
     font-size: 16px;
   }
@@ -166,6 +162,10 @@
 
   .modal__submit-button {
     width: 100%;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 }
 
