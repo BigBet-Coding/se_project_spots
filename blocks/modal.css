@@ -92,6 +92,10 @@
   border-radius: 8px;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__error {
   display: block;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -111,6 +115,11 @@
   line-height: 1;
   color: #fcf5e5;
   cursor: pointer;
+}
+
+.modal__submit-button_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .modal__submit-button:hover {

@@ -63,7 +63,7 @@
         <div class="modal__container">
           <button type="button" class="modal__close-button"></button>
           <h2 class="modal__title">Edit profile</h2>
-          <form name="edit-profile" class="modal__form">
+          <form name="edit-profile" class="modal__form" novalidate>
             <label for="name" class="modal__label">
               Name
               <input
@@ -75,7 +75,7 @@
                 maxlength="40"
                 required
               />
-              <span class="modal__error"></span>
+              <span id="name-error" class="modal__error"></span>
             </label>
             <label for="description" class="modal__label">
               Description
@@ -88,7 +88,7 @@
                 maxlength="200"
                 required
               />
-              <span class="modal__error"></span>
+              <span id="description-error" class="modal__error"></span>
             </label>
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
@@ -98,7 +98,7 @@
         <div class="modal__container">
           <button type="button" class="modal__close-button"></button>
           <h2 class="modal__title">New post</h2>
-          <form name="new-post" class="modal__form">
+          <form name="new-post" class="modal__form" novalidate>
             <label for="imageLink" class="modal__label">
               Image Link
               <input
@@ -121,7 +121,7 @@
                 maxlength="30"
                 required
               />
-              <span class="modal__error"></span>
+              <span id="caption-error" class="modal__error"></span>
             </label>
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
