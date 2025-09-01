@@ -47,7 +47,7 @@
 .card__delete-button:hover {
   background-image: url(../images/Delete-Hover.svg);
   cursor: pointer;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__like-button {
@@ -58,7 +58,7 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .card__like-button:hover {
